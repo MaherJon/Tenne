@@ -30,16 +30,16 @@ Tenne is a binary classification model specifically designed to distinguish betw
 pip install torch transformers
 ```
 
-### Load Model
+### Load Model from Hugging Face
 
 ```python
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
+from huggingface_hub import hf_hub_download
 import torch
 
-# Load pre-trained model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("./best_ai_detector")
-model = AutoModelForSequenceClassification.from_pretrained("./best_ai_detector")
+tokenizer = AutoTokenizer.from_pretrained("MAHE-model/Tenne")
+model = AutoModelForSequenceClassification.from_pretrained("MAHE-model/Tenne")
 model.eval()
 ```
 
@@ -110,7 +110,7 @@ def batch_detect(texts, batch_size=16):
 
 | Parameter | Specification |
 |---------- | ------------- |
-| Model Size | ~330 MB |
+| Model Size | ~400 MB |
 | Max Input Length | 512 tokens |
 | Inference Time | < 100ms (GPU) |
 | Language | Chinese (Simplified) |
