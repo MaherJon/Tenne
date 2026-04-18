@@ -25,15 +25,14 @@ Tenne is a binary classification model specifically designed to distinguish betw
 
 ### Requirements
 
-```
-bash
+
+```bash
 pip install torch transformers
 ```
 
 ### Load Model
 
-```
-python
+```python
 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
@@ -46,8 +45,8 @@ model.eval()
 
 ### Single Text Detection
 
-```
-python
+
+```python
 def detect(text):
     inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=512)
 
@@ -71,8 +70,8 @@ print(f"Result: {result['label']}, Confidence: {result['confidence']:.4f}")
 
 ### Batch Detection
 
-```
-python
+
+``` python
 def batch_detect(texts, batch_size=16):
     results = []
     for i in range(0, len(texts), batch_size):
