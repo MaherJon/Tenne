@@ -1,6 +1,9 @@
 # Tenne: AI-Generated Content Detection Model
 ## 📖 Product Overview
-Tenne is a binary classification model specifically designed to distinguish between **human-written** and **AI-generated** text. The model effectively identifies content produced by large language models such as ChatGPT, providing technical support for content moderation, academic integrity detection, and related applications.
+Tenne is a binary classification model specifically designed to distinguish between **human-written** and **AI-generated** text. The model effectively identifies content produced by large language models such as ChatGPT, providing technical support for content moderation, academic integrity detection, and related applications.    
+
+![Logo](./TenneLogo.jpg)    
+
 ## ✅ Core Capabilities
 - High Accuracy: 97%+ accuracy on validation set    
 - Zero False Negatives: 100% recall for AI-generated text    
